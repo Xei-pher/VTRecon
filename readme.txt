@@ -17,13 +17,13 @@ VTRecon is a powerful and versatile command-line tool designed for cybersecurity
 
 ### 1. Python Environment
 Ensure you have Python 3.x installed on your system. You can check your Python version by running:
-```bash
+```
 python --version
 ```
 
 ### 2. Required Libraries
 Install the necessary Python libraries by running the following command:
-```bash
+```
 pip install requests python-whois
 ```
 
@@ -44,7 +44,7 @@ pip install requests python-whois
 Update the script with your VirusTotal API key:
 1. Open `vtrecon.py` in a text editor.
 2. Locate the following line:
-   ```python
+   ```
    VIRUSTOTAL_API_KEY = 'your_virustotal_api_key'
    ```
 3. Replace `'your_virustotal_api_key'` with your actual API key.
@@ -57,47 +57,47 @@ Run the script from the command line with the following options:
 
 ### 1. Scan a File Hash
 Scan a file hash (MD5, SHA256, etc.) for potential threats:
-```bash
+```
 python vtrecon.py -f <file_hash>
 ```
 Example:
-```bash
+```
 python vtrecon.py -f 44d88612fea8a8f36de82e1278abb02f
 ```
 
 ### 2. Scan an IP Address
 Analyze an IP address for malicious activity:
-```bash
+```
 python vtrecon.py -i <ip_address>
 ```
 Example:
-```bash
+```
 python vtrecon.py -i 8.8.8.8
 ```
 
 ### 3. Scan a URL
 Check a URL for potential threats:
-```bash
+```
 python vtrecon.py -u <url>
 ```
 Example:
-```bash
+```
 python vtrecon.py -u https://example.com
 ```
 
 ### 4. WHOIS Lookup
 Retrieve WHOIS information for a domain:
-```bash
+```
 python vtrecon.py -d <domain>
 ```
 Example:
-```bash
+```
 python vtrecon.py -d example.com
 ```
 
 ### 5. Help
 View the help menu for more options:
-```bash
+```
 python vtrecon.py -h
 ```
 
